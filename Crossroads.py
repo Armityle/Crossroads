@@ -37,6 +37,7 @@ def useItem():
 			except ValueError:
 				numChoice = 0
 				continue
+		print("")#experimental to try to break up the walls of text from each other
 		return items[numChoice-1]
 	else:
 		return False
@@ -286,7 +287,7 @@ class river:
 			"You continue to your right.",
 			"The beach doesn't continue for that long before you reach the base of a cliff.",
 			"You look up and see the edge of the forest you saw earlier.",
-			"On the edge of the cliff is an oddly shaped tree is growing. It's thick trunk is twisted over the edge of the cliff in a convenient horizontal fashion.",
+			"On the edge of the cliff, an oddly shaped tree is growing. Its thick trunk is twisted over the edge of the cliff in a convenient horizontal fashion.",
 			"However it is far too high up to be grabbed on to.",
 			sep="\n")
 			if not flags["ropeOnTree"]:
@@ -410,7 +411,7 @@ class forest:
 		
 			print(
 			"The path seems to continue right through the forest to the other side.",
-			"But there's no way past while the bear is there.",
+			"But there's no way past while the bear is there?",
 			sep="\n")
 			
 			if len(items) != 0:
@@ -547,7 +548,7 @@ class forest:
 		print(
 		"You walk along a path to your right until you reach the edge of the forest.",
 		"A long castle wall runs along the edge of the entire forest.",
-		"The bricks are crumbling in places and there are vines of ivy climb up the side.",
+		"The bricks are crumbling in places and there are vines and ivy climbing up the side.",
 		sep="\n")
 		if not flags["ropeIsDown"]:
 			print("You see a rope dangling from one of the turrets. The end of it is mysteriously tied around the trunk of a tree.")
@@ -667,7 +668,7 @@ class castle:
 				"The pans are close enough to the edge that you can just about reach the things inside them.",
 				"Inside the left pan is a Giant Bowl.",
 				"Inside the other pan is a Giant Crown.",
-				"You can only reach one of them, and when you take it the other will fall down and lost forever.",
+				"You can only reach one of them, and when you take it the other will fall down and be lost forever.",
 				"Which one will you take?",
 				"1: Giant Bowl",
 				"2: Giant Crown",
