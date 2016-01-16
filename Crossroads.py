@@ -73,7 +73,7 @@ class globe:
 		print(
 		"The left path leads towards a river.",
 		"The right path leads towards a castle.",
-		"And the middle paths leads towards a forest.",
+		"And the middle path leads towards a forest.",
 		"--------------------",
 		"In which direction will you go?",
 		"1: Towards the river",
@@ -164,7 +164,7 @@ class river:
 					sep="\n")
 					
 					sleep(8)
-					print("After what seems like an eternity, your constant paddling pays off.",)
+					print("After what seems like an eternity, your constant paddling pays off.")
 					sleep(1)
 					print(
 					"*bump*",
